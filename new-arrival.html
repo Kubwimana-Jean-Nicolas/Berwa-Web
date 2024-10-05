@@ -3,128 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berwa Shop</title>
+    <title>new-arrival</title>
+
     
 
+
+    <style>
+           
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(243, 243, 110, 0.4);
+            
+        }
+        /*STYLE OF THE MY NAVIGATION*/
+
+        .navigation-container{
+           
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          position: sticky;
+          align-items: center;
+          top: 0px;
+          background: rgb(0, 0, 0,0.6) url("images/shubham-dhage-GQTmOdtFdd8-unsplash.jpg"); 
+          background-blend-mode: darken;
+          background-size: cover;
+          color: white;
+          padding: 10px 20px;
+          font-size: 15px;
+        
+    
+        }
+        .navigation-container img {
+            background-color: white;
+           
+            height: 40px;
+            width: 40px;
+            
+        }
+        .nav-list{
+          justify-content: right;
+          align-items: center;
+          display: flex;
+          list-style: none;
+        }
+        .nav-list li{
+            margin: 20px;
+        }
+       
+        .nav-list li a{
+            text-decoration: none;
+            color: white;
+            transition: color 0.5s;
+        }
+        .nav-list li a:hover{
+            color:#ffd700;
+        }
+      
+        /*STYLE OF MY POSTS*/
+        
+        .container{
      
+           padding:20px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap: 100px;
+           font-family: sans-serif;
+           font-size: 15px;
+        }
+        .dress-post{
+          background-color: rgb(110, 86, 53);
+          text-align: center;
+          width: 400px;
+    
+           
+        }
+        .post-contents{
+          margin-top: 10px;
+           
+        }
+        
+        .dress-post img{
+            width: 100%;
+            height: auto; 
+            border-radius: 8px;
+        }
+       
+        .shoes-post{
+          background-color: rgb(110, 86, 53);
+          text-align: center;
+          width: 400px;
+        }
+        .shoes-post img{
+            width: 100%;
+            height: auto; 
+            border-radius: 8px;
+        }
+
+  
+        .suit-post{
+          background-color: rgb(110, 86, 53);
+          text-align: center;
+          width: 400px;
+        }
+        .suit-post img{
+            width: 100%;
+            height: auto; 
+            border-radius: 8px;
+        }
+    
+       
+     
+
+
+
+    </style>
+
 </head>
 <body>
+   <!---The navigation Bars part-->
+        <nav class="navigation-container">
+            <img  src="images/community.png">
+            <ul class="nav-list">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="shoes-and-rings.html">SHOES & RINGS</a></li>
+                <li><a href="new-arrival.html">NEW STOCK</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="signin.html">SIGN IN</a></li>
+            </ul>
+        </nav>
 
-    <!-- Header of the Website -->
-    <header>
-            <div class="top">
-                <h3>VONN BLESSING SHOP</h3>
-            </div>
-        <div>
-            <nav>
-                <img class="logo" src="images/cart-shopping-solid.jpg" alt="Shop Logo"> 
-               <a href="home.html">Home</a>
-                <a style="margin-left: auto;" href="new-arrival.html">New Arrival</a>
-                <a href="shoes-and-rings.html">Shoes & Rings</a> 
-                <a href="accessories.html">Accessories</a> 
-                <a class="signin" href="signin.html"><img src="images/Sign-in-button.jpg" alt="Sign In">Sign In</a> 
-            </nav>
-        </div>
-    </header> 
+        <main>
+            <!--the post section of my page-->
+            <section class="container">
+                <div class="dress-post">
+                    <img src="images/dress3.jpg" alt="dress">
+                <div class="post-contents">
+                    <h1>Dresses</h1>
+                    <p> Amount </p>
+                </div>
 
-    <!-- Main Part of the Website -->
-    <main>
+                </div>
+                <div class="dress-post">
+                    <img src="images/dress2.jpg" alt="dress">
+                <div class="post-contnets">
+                    <h1>Dresses</h1>
+                    <p> Amount </p>
+                </div>
 
-        <!-- Add more content here -->
-     <div class="product">
+                </div>
+                <div class="dress-post">
+                    <img src="images/dress1.jpg" alt="dress">
+                <div class="post-contnets">
+                    <h1>Dresses</h1>
+                    <p> Amount </p>
+                </div>
+                </div>
+                
 
-            <!--section of shoes-->
-         <section class="top shoes">
+            </section>
+
+            <section class="container">
+                <div class="shoes-post">
+                    <img src="images/shoes1.jpg" alt="shoes">
+                <div class="post-contents">
+                    <h1>SHOES</h1>
+                    <p>Amount</p>
+                </div>
+                </div>
+              
+                <div class="shoes-post">
+                    <img src="images/shoes3.jpg" alt="shoes">
+                    <div class="post-contents">
+                        <h1>SHOES</h1>
+                        <p>Amount</p>
+                    </div>
+                </div>
+                <div class="shoes-post">
+                    <img src="images/shoes2.jpg" alt="shoes">
+                    <div class="post-contents">
+                        <h1>SHOES</h1>
+                        <p>Amount</p>
+                    </div>
+                </div>
+             
+            </section>
+
+            <section class="container">
+                <div class="suit-post">
+                    <img src="images/suit1.jpg" alt="suits">
+                <div class="post-contents">
+                    <h1>SUITS</h1>
+                    <p>Amount</p>
+                </div>
+                </div>
+                <div class="suit-post">
+                    <img src="images/suit2.jpg" alt="suits">
+                    <div class="post-contents">
+                        <h1>SUITS</h1>
+                        <p>Amount</p>
+                    </div>
+                </div>
+                <div class="suit-post">
+                    <img src="images/suit3.jpg" alt="suits">
+                    <div class="post-contents">
+                        <h1>SUITS</h1>
+                        <p>Amount</p>
+                    </div>
+                </div>
+                </div>
+                
+            </section>
+        </main>
+
         
-            <h1>New stock of shoes /h1>
-
-            <div class="shoes 1">
-                <img src="#" alt="shoes">
-                <h1>product name</h1>
-                <p>description of the product</p>
-                <div class="price">Rwf 10000.00</div>
-            </div>
-
-            <div class="shoes 2">
-                <img src="#" alt="shoes">
-                <h1>product name</h1>
-                <p>description of the product</p>
-                <div class="price">Rwf 10000.00</div>
-            </div>
-            <div class="shoes 3">
-                <img src="#" alt="shoes">
-                <h1>product name</h1>
-                <p>description of the product</p>
-                <div class="price">Rwf 10000.00</div>
-            </div>
-        </section>
-
-        <!--section of clothes style-->
-        <section id="clothers">
-            <h1>Our New Style Available in the stock</h1>
-        
-            <div class="clothes 1"></div>
-                <img src="#" alt="clothe">
-                <h1>product name</h1>
-                <p>description of the product</p>
-                <div class="price">Rwf 10000.00</div>
-            </div>
-            <div class="clothes 2"></div>
-                <img src="#" alt="clothe">
-                <h1>product name</h1>
-                <p>description of the product</p>
-                <div class="price">Rwf 10000.00</div>
-            </div>
-            <div class="clothes 3"></div>
-                <img src="#" alt="clothe">
-                <h1>product name</h1>
-                <p>description of the product</p>
-                <div class="price">Rwf 10000.00</div>
-            </div>
-
-        </section>
-
-
-        <!--section of Bags-->
-        <section class="bag">
-            <h1>Available bags in the stock</h1>
-            <div class="product-bag"></div>
-                <img src="#" alt="bag ">
-                <h1>product name</h1>
-                <p>description of the product</p>
-                <div class="price">Rwf 10000.00</div>
-            </div>
-
-            <div class="product-bag"></div>
-                <img src="#" alt="bag">
-                <h1>product name</h1>
-                <p>description of the product</p>
-                <div class="price">Rwf 10000.00</div>
-            </div>
-
-            <div class="product-bag"></div>
-                <img src="#" alt="bag">
-                <h1>product name</h1>
-                <p>description of the product</p>
-                <div class="price">Rwf 10000.00</div>
-            </div>
-        </section>
-
-     </div>
-
-    </main> 
-    <!-- Footer of the Website -->
-    <footer>
-        <div id="contact-us">
-            <small>&copy; 2024 Berwa Shop. All rights reserved.</small>
-            <h4>Contact Us</h4>
-            <p><strong>Phone:</strong> +250 788 975 4</p>
-            <p><strong>Email:</strong> <a href="mailto:Vonny@gmail.com">Vonny@gmail.com</a></p>
-        </div>
-        <div footer-log>
-            <img src="images/LOG-STAR.jpg" alt="Footer Logo"> 
-        </div>
-    </footer>
-
+    
+   
+    
 </body>
 </html>
